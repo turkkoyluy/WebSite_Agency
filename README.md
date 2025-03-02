@@ -36,7 +36,9 @@
 <br>
 <img width="1470" alt="Image" src="https://github.com/user-attachments/assets/cc426705-c1f7-4738-8bd2-693d1bacc9f2" /> 
 <br>
+
 # 🎨 UI/UIX Kısmından Görseller
+
 <br>
 <img width="1456" alt="Image" src="https://github.com/user-attachments/assets/e026f944-9a24-4232-a42d-ec3d47bd3b7b" />
 <br>

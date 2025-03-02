@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+@Html.Partial("/Views/Default/HeaderPartial.cshtml")
+<body id="page-top">
+    <!-- Navigation-->
+    @Html.Action("NavbarPartial", "Default")
+    <!-- Masthead-->
+    @Html.Action("FeaturePartial", "Default")
+    <!-- Services-->
+    @Html.Action("ServicePartial", "Default")
+    <!-- Portfolio Grid-->
+    @Html.Action("ProjectPartial", "Default")
+    <!-- About-->
+    @Html.Action("AboutPartial", "Default")
+    <!-- Team-->
+    @Html.Action("TeamPartial", "Default")
+    <!-- Clients-->
+    @Html.Partial("/Views/Default/ClientsPartial.cshtml")
+    <!-- Contact-->
+    @Html.Action("ContactPartial", "Default")
+    <!-- Footer-->
+    @Html.Partial("/Views/Default/FooterPartial.cshtml")
+    <!-- Portfolio Modals-->
+    <!-- Portfolio item 1 modal popup-->
+    @Html.Action("ModalPartial", "Default")
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1hdF8E8pVd1vkkf6As8P036w_1eZgq9Y&ehbc=2E312F" width="1800" height="500"></iframe>
+    <!-- Portfolio item 2 modal popup-->
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="/Templates/agency/js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
+

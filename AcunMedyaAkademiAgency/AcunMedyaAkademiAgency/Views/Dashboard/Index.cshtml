@@ -1,0 +1,199 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row">
+    <div class="col-sm-12 mt-3">
+        <h3>İstatistikler</h3>
+    </div>
+    <div class="col-xl-12 col-lg-12 stretch-card grid-margin">
+        <div class="col-3 stretch-card grid-margin grid-margin-sm-0 pb-sm-3">
+            <div class="card bg-warning">
+                <div class="card-body px-3 py-4">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div class="color-card">
+                            <p class="mb-0 color-card-head">Bildirim Sayısı</p>
+                            <h2 class="text-white">
+                                @ViewBag.bildirimsayisi
+                            </h2>
+                        </div>
+                        <i class="card-icon-indicator mdi mdi-basket bg-inverse-icon-warning"></i>
+                    </div>
+                    <h6 class="text-white">Tüm bildirimler</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 stretch-card grid-margin grid-margin-sm-0 pb-sm-3">
+            <div class="card bg-danger">
+                <div class="card-body px-3 py-4">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div class="color-card">
+                            <p class="mb-0 color-card-head">Projelerin Sayısı</p>
+                            <h2 class="text-white">
+                                @ViewBag.projectsayisi
+                            </h2>
+                        </div>
+                        <i class="card-icon-indicator mdi mdi-cube-outline bg-inverse-icon-danger"></i>
+                    </div>
+                    <h6 class="text-white">Tüm Projeler</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 stretch-card grid-margin grid-margin-sm-0 pb-sm-3">
+            <div class="card bg-primary">
+                <div class="card-body px-3 py-4">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div class="color-card">
+                            <p class="mb-0 color-card-head"> Grafik Tasarım Projeleri</p>
+                            <h2 class="text-white">
+                                @ViewBag.grafikCount
+                            </h2>
+                        </div>
+                        <i class="card-icon-indicator mdi mdi-briefcase-outline bg-inverse-icon-primary"></i>
+                    </div>
+                    <h6 class="text-white">Tüm Projeler</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 stretch-card grid-margin grid-margin-sm-0 pb-sm-3">
+            <div class="card bg-success">
+                <div class="card-body px-3 py-4">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div class="color-card">
+                            <p class="mb-0 color-card-head">Personellerimiz</p>
+                            <h2 class="text-white">
+                                @ViewBag.personelsayisi
+                            </h2>
+                        </div>
+                        <i class="card-icon-indicator mdi mdi-account-circle bg-inverse-icon-success"></i>
+                    </div>
+                    <h6 class="text-white">Tüm Personeller</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 mt-3">
+
+    </div>
+    <div class="col-xl-12 col-lg-12 stretch-card grid-margin">
+        <div class="col-3 stretch-card grid-margin grid-margin-sm-0 pb-sm-3">
+            <div class="card bg-warning">
+                <div class="card-body px-3 py-4">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div class="color-card">
+                            <p class="mb-0 color-card-head">Mesaj Sayısı</p>
+                            <h2 class="text-white">
+                                @ViewBag.mesajsayisi
+                            </h2>
+                        </div>
+                        <i class="card-icon-indicator mdi mdi-basket bg-inverse-icon-warning"></i>
+                    </div>
+                    <h6 class="text-white">Tüm Mesajlar</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 stretch-card grid-margin grid-margin-sm-0 pb-sm-3">
+            <div class="card bg-danger">
+                <div class="card-body px-3 py-4">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div class="color-card">
+                            <p class="mb-0 color-card-head">Projelerin Sayısı</p>
+                            <h2 class="text-white">
+                                @ViewBag.projectsayisi
+                            </h2>
+                        </div>
+                        <i class="card-icon-indicator mdi mdi-cube-outline bg-inverse-icon-danger"></i>
+                    </div>
+                    <h6 class="text-white">Tüm Projeler</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 stretch-card grid-margin grid-margin-sm-0 pb-sm-3">
+            <div class="card bg-primary">
+                <div class="card-body px-3 py-4">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div class="color-card">
+                            <p class="mb-0 color-card-head"> Grafik Tasarım Projeleri</p>
+                            <h2 class="text-white">
+                                @ViewBag.grafikCount
+                            </h2>
+                        </div>
+                        <i class="card-icon-indicator mdi mdi-briefcase-outline bg-inverse-icon-primary"></i>
+                    </div>
+                    <h6 class="text-white">Tüm Projeler</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 stretch-card grid-margin grid-margin-sm-0 pb-sm-3">
+            <div class="card bg-success">
+                <div class="card-body px-3 py-4">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div class="color-card">
+                            <p class="mb-0 color-card-head">Personellerimiz</p>
+                            <h2 class="text-white">
+                                @ViewBag.personelsayisi
+                            </h2>
+                        </div>
+                        <i class="card-icon-indicator mdi mdi-account-circle bg-inverse-icon-success"></i>
+                    </div>
+                    <h6 class="text-white">Tüm Personeller</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Sol taraftaki To-Do List -->
+    <div class="col-xl-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title text-black">Yapılacaklar Sitesi</h4>
+                <p class="text-muted">Bugün Yapılması Gerekenler</p>
+                <div class="list-wrapper">
+                    <ul class="d-flex flex-column-reverse todo-list todo-list-custom">
+                        <li>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="checkbox" type="checkbox" /> Büşra hanıma mail atılacak
+                                </label>
+                                <span class="list-time">4 Hours Ago</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="checkbox" type="checkbox" /> Son proje tasarımları güncellenecek
+                                </label>
+                                <span class="list-time">6 Hours Ago</span>
+                            </div>
+                        </li>
+                        <li class="completed">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="checkbox" type="checkbox" checked /> Yeni alınan elamanın sigorta girişleri yapılacak
+                                </label>
+                                <span class="list-time">2 Hours Ago</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="checkbox" type="checkbox" /> Bankadan kredi kartı çıkarılacak
+                                </label>
+                                <span class="list-time">8 Hours Ago</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Sağ tarafa eklemek istediğin tablo buraya gelecek -->
+    @Html.Action("StaffPartial", "Dashboard")
+</div>

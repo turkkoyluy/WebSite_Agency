@@ -1,0 +1,81 @@
+﻿@model List<AcunMedyaAkademiAgency.Entities.Service>
+@{
+    ViewBag.Title = "ServiceList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
+}
+<style>
+
+    .description-cell {
+        max-width: 300px; 
+        max-height: 80px; 
+        overflow-y: auto;
+        white-space: normal; 
+        word-wrap: break-word;
+        border: 1px solid #ddd; 
+        padding: 5px; 
+    }
+</style>
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Hizmetler Sayfası</h4>
+            <p class="card-description">
+                Hizmetlerle İlgili İşlemlerinizi Buradan Gerçekleştirebilirsiniz.
+            </p>
+            <form method="get">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Aranacak Kelime" aria-label="Aranacak Kelime" aria-describedby="basic-addon2" name="searchText" />
+                        <div class="input-group-append">
+                            <button class="btn btn-sm btn-primary"> Ara </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="table-responsive" style="max-width: 100%; overflow-x: auto;">
+                <table class="table table-bordered table-hover">
+                    
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Adı</th>
+                            <th>Resmi</th>
+                            <th>Açıklama</th>
+                            <th>Sil</th>
+                            <th>Güncelle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            count++;
+                            <tr>
+                                <td>@count</td>
+                                <td>@item.Title</td>
+                                <td><img src="@item.ImageUrl" style="width:75px;height:75px;" alt="Hizmet Görseli" /></td>
+                                <td class="description-cell">@item.Description</td>
+                                <td>
+                                    <a class="btn btn-danger" href="/Service/DeleteService/@item.ServiceId">
+                                        <i class="fa fa-trash"></i> <span>Sil</span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a class="btn btn-success" href="/Service/UpdateService/@item.ServiceId">
+                                        <i class="mdi mdi-printer btn-icon-append">Güncelle</i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <br />
+                <a href="/Service/CreateService" class="btn btn-info">
+                    <i class="mdi mdi-file-check btn-icon-append">Yeni Hizmet Girişi</i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
